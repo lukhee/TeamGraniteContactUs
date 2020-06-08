@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-        rel="stylesheet"
-        />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <style>
-            #contact_one{
-                background-image:url('https://res.cloudinary.com/dtyrfo0fx/image/upload/v1591628524/hng%20granite/Rectangle_2_1.png');
-                background-repeat:no-repeat;
-                background-attachment:fixed;
-                background-position:center;
-                width: 100%;
-                height: 500px;
-                position: relative;
-            }
-            .contact_one_text{
-                color: white;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
-        </style>
-    </head>
-    <body>
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #contact_one {
+        background-image: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        position: relative;
+      }
+      @keyframes specialanim {
+        from {
+          top: -315px;
+        }
+        to {
+          top: 50px;
+        }
+      }
+      .specialoffer {
+        position: fixed;
+        top: -315px;
+        right: 100px;
+        animation: specialanim 1s ease 0.5s 1 forwards;
+      }
+      .contact_one_text {
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
     <div id="contact_one">
-        <div class="contact_one_text">
-            <h1> CONTACT US </h1>
-        </div>
-        <div>
-        </div>
+      <div class="contact_one_text">
+        <h1>CONTACT US</h1>
+      </div>
+      <div class="specialoffer">
+        <img
+          src="https://res.cloudinary.com/dtyrfo0fx/image/upload/v1591633734/hng%20granite/specialoffer.svg"
+          alt="Special Offer on Booking 80% off"
+        />
+      </div>
+      <div></div>
     </div>
-    </body>
+  </body>
 </html>
