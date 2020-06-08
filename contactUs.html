@@ -15,10 +15,13 @@
         box-sizing: border-box;
       }
       #contact_one {
-        background-image: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png');
+        background: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png')
+          no-repeat center center fixed;
+        background-size: cover;
+        /* background-image: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center;
+        background-position: center; */
         width: 100%;
         height: 500px;
         position: relative;
@@ -55,7 +58,7 @@
       }
       .locatedcentered {
         text-align: center;
-        margin: 90px 0;
+        margin: 90px auto;
       }
       .locatedcentered > p {
         width: 60%;
@@ -73,13 +76,11 @@
         font-size: 32px;
         font-weight: bolder;
       }
-
       section {
         display: grid;
         grid-template-columns: 2fr 1fr;
-      }
-      form {
-        padding-left: 13em;
+        margin: 0 auto;
+        width: 70%;
       }
       aside {
         font-size: 18px;
@@ -98,11 +99,12 @@
         font-size: 18px;
       }
       #message {
-        width: 493px;
+        max-width: 493px;
+        width: 90%;
         height: 100px;
       }
       input[type='button'] {
-        width: 530px;
+        max-width: 530px;
         background: #144673;
         color: white;
       }
@@ -113,6 +115,15 @@
       }
       i {
         padding: 10px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        section {
+          grid-template-columns: 1fr;
+        }
+        aside {
+          margin-top: 90px;
+        }
       }
     </style>
   </head>
