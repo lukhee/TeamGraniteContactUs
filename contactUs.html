@@ -7,41 +7,6 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- HEAD
-    <title>Document</title>
-    <style type="text/css">
-    *body{
-      text-align: center;
-      width: 100%;
-      padding: auto;
-    }
-      p {
-      width: 60%;
-      display: inline-block;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 28px;
-      text-align: center;
-      color: #333333;
-      }
-
-      .centered{
-        text-align: center;
-        margin-top: 10%;
-      }
-      .bolder{
-        font-size: 32px;
-        font-weight: bolder;
-      }
-
-    </style>
-  </head>
-  <body>
-  <div class="centered">
-      <p class="bolder">Where is the hotel located</p><br>
-      <p>It is located in the heart of Lagos, with serene environment where you have the view of your liife time seeing the oceans</p>  
-  </div>
     <title>Contact Us</title>
     <style>
       * {
@@ -67,7 +32,7 @@
         }
       }
       .specialoffer {
-        position: fixed;
+        position: absolute;
         top: -315px;
         right: 100px;
         animation: specialanim 1s ease 0.5s 1 forwards;
@@ -79,6 +44,25 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+      }
+      .locatedcentered {
+        text-align: center;
+        /* margin-top: 10%; */
+        margin: 90px 0;
+      }
+      .locatedcentered > p {
+        width: 60%;
+        display: inline-block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        text-align: center;
+        color: #333333;
+      }
+      .locatedbolder {
+        font-size: 32px;
+        font-weight: bolder;
       }
     </style>
   </head>
@@ -93,8 +77,14 @@
           alt="Special Offer on Booking 80% off"
         />
       </div>
-      <div></div>
+      <div class="locatedcentered">
+        <p class="locatedbolder">Where is the hotel located</p>
+        <br />
+        <p>
+          It is located in the heart of Lagos, with serene environment where you
+          have the view of your liife time seeing the oceans
+        </p>
+      </div>
     </div>
- upstream/master
   </body>
 </html>
